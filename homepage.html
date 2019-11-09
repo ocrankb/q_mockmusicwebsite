@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Q!</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+
+    <audio id="audio" src="Southside, Richmond.mp3" preload="auto">
+    </audio>
+    
+    <div id="loader">
+    <button onclick='togglePlay()'>Q!</button>
+    </div>
+
+    <img src="SuckaPunch-official.png" alt="sucka">
+
+    <h1>5800K EP <br>coming soon!</h1>
+  </header>
+
+  <div class="container">
+    <section>
+        <img src="southside richmond.jpg" alt="southside">
+    </section>   
+
+    <footer class="footer">
+
+      <div class="relative">
+        <a href ="http://127.0.0.1:5500/Music/music.html">Music</a>
+        <a href="http://127.0.0.1:5500/Videos/videos.html">Videos</a>
+        <a href="http://127.0.0.1:5500/Live/live.html">Live</a>
+        <a href="http://127.0.0.1:5500/Merch/merch.html">Merch</a>
+      </div>
+
+      <div class="links">
+        <a href="https://www.twitter.com/qofspe" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/qofspe" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCRm2ochq23B1mOV-8FiMFbg?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://tidal.com/artist/10059561" target="_blank">Tidal</a>
+        <a href="https://itunes.apple.com/us/artist/q/1463251138" target="_blank"><i class="fab fa-apple"></i></a>
+        <a href="https://open.spotify.com/artist/2h5Oo4jg1lGQpso8Kpznw0?si=hM6ZihgqRs-VEZXoq0dVkQ" target="_blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://www.soundcloud.com/qofspe" target="blank"><i class="fab fa-soundcloud"></i></a>
+      </div>
+      
+      <div class="copy">
+        <p>Copyright &copy; 2019 SuckaPunch Entertainment</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const audio = document.getElementById("audio");
+    let playing = false;
+
+    function togglePlay() {
+      if (playing) {
+        audio.pause()
+      } else {
+        audio.play();
+      }
+    };
+    audio.onplaying = function() {
+      playing = true;
+    };
+    audio.onpause = function() {
+      playing = false;
+    };
+  </script>
+
+</body>
+</html>
