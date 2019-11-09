@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap');
+@import url('//db.onlinewebfonts.com/c/83a20700464f9c9afa8ba441b158c4db?family=AR+BLANCA');
+
+body, html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'AR BLANCA';
+}
+
+header {
+    position: absolute;
+    margin-top: 170px;
+    padding: 2.5em;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 5em);
+    font-family: 'Libre Baskerville';
+
+    h1 {
+        margin: 0px;
+        border: none;
+        z-index: 1;
+        text-align: center;
+        font-size: 2.3em;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: .8px;
+        -webkit-text-stroke-color: red;
+    }
+ }
+
+ .wrapper {
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+
+        #logo {
+
+
+           img {
+              width: 100px;
+              height: 50px;
+              position: fixed;
+              bottom: 4.5em;
+              z-index: 1;
+              left: 0em;
+            }
+        }
+    }
+
+.footer {
+        color: green;
+        background-color: black;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        height: 4em;
+        z-index: 1;
+        
+    
+        .relative {
+            margin: 0 auto;
+            font-size: .5em;
+            word-spacing: 2em;
+            padding-top: 25px;
+            display: inline-block;
+        }
+    
+        .links { 
+            margin: 0 auto;
+            font-size: .5em;
+            word-spacing: 2em;
+            padding-top: 25px;
+            display: inline-block;
+        }
+    
+        .copy {
+            margin: 0 auto;
+            font-size: .5em;
+            padding-top: 17.2px;
+            display: block;
+        }
+    
+        a {
+            text-decoration: none;
+            color: green;
+        }
+    }
+
+    @media only screen and (min-width: 700px) {
+
+        .wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        header {
+            margin-top: 160px;
+            font-size: 16px;
+        }
+        
+        header h1 {
+            font-size: 2.6em;
+        }
+    
+        .wrapper .footer .relative {
+            font-size: .6em;
+        }
+        
+        .wrapper .footer .links {
+            font-size: .6em;
+        }
+    
+        .wrapper .footer .copy {
+            font-size: .6em;
+            padding-top: 16.3px;
+        }
+    }
+    
+    
+    @media only screen and (min-width: 1020px) {
+    
+        .wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        header {
+            margin-top: 90px;
+            font-size: 18px;
+        }
+    
+        header h1 {
+            font-size: 3em;
+        }
+    
+        .wrapper .footer .relative {
+            font-size: .8em;
+        }
+       
+        .wrapper .footer .links {
+            font-size: .8em;
+        }
+    
+        .wrapper .footer .copy {
+            font-size: .8em;
+            padding-top: 11.5px;
+        }
+    }
+    
+    @media only screen and (min-width: 1080px) {
+
+        header {
+            margin-top: 125px;
+            font-size: 18px;
+        }
+    }
+    
+    
+    @media only screen and (min-width: 700px) {
+        
+        .wrapper #logo img {
+            width: 125px;
+            height: 75px;
+        }
+    }
+    
+    @media only screen and (min-width: 1020px) {
+        
+        .wrapper #logo img {
+            width: 150px;
+            height: 100px;
+        }
+    }
